@@ -20,3 +20,8 @@ if c <= chockolate and (c%a == 0 or c%b == 0):
 else:
     print('no')
 
+# или другой вариант решения: 
+if c % a == 0 or c % b == 0:
+    print('yes')
+else:
+    print('no')
