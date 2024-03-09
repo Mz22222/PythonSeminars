@@ -17,3 +17,7 @@ Katy = (n // 3) * 2
 Serega = (n - Katy) // 2 
 Pety = Serega
 print(Pety, Katy, Serega)
+
+
+# или другой вариант решения в одну строку:
+print(n//6, (n//3)*2, n//6)
