@@ -6,14 +6,13 @@
 # Все числа натуральные и не превышают 30000.
 
 num = int(input('Введите количество арбузов: ' ))
-max_wheit = 0
-min_wheit = 30001
+max_weight = 0
+min_weight = 30001
 
 for i in range(num):
-    mellon = int(input('масса: '))
-    if max_wheit < mellon:
-        max_wheit = mellon  
-    if min_wheit > mellon:
-        min_wheit = mellon
-
-print(f'максимальный вес арбуза {max_wheit}, минимальный вес арбуза {min_wheit}')
+    watermelon = int(input('масса: '))
+    if max_weight < watermelon:
+        max_weight = watermelon
+    if min_weight > watermelon:
+        min_weight = watermelon
+print(f'максимальный вес арбуза {max_weight}, минимальный вес арбуза {min_weight}')
