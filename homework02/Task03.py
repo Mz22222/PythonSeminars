@@ -12,7 +12,7 @@
 
 n=16
 
-k = 1
-while k <= n:
-    print(k)
-    k *=2
+degree = 1
+while degree <= n:
+    print(degree)
+    degree *=2
