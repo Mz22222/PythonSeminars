@@ -2,7 +2,7 @@
 # Количество повторов добавляется к символам с помощью постфикса формата _n.
 
 # Input: aaabcaadcdd
-# Output: a a_1 a_2 b c a_3 a_4 d c_1 d_1 d_2
+# Output: aa_1a_2bca_3a_4dc_1d_1d_2
 
 
 a = 'aaabcaadcdd'
