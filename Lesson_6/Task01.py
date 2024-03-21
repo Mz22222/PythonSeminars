@@ -14,3 +14,20 @@ def add_in_the_end(array1: list[int], array2: list[int]) -> list[int]:
 array1 = [1, 2, 3, 4, 5]
 array2 = [6, 2, 8, 5, 0]
 print(add_in_the_end(array1, array2))
+
+
+
+# или более быстрое решение (с помощью множеств, а не листов)
+# уровень сложности (скорость): 
+# листы - О(n)
+# множества - О(1) 
+# т.е. с множествами естественно быстрее 
+
+def zamena(array1: list[int], array2: list[int]) -> list[int]:
+    set_list = set(array2)
+    return [num for num in array1 if num not in set_list]
+
+
+array1 = [1, 2, 3, 4, 5]
+array2 = [6, 2, 8, 5, 0]
+print(zamena(array1, array2))
