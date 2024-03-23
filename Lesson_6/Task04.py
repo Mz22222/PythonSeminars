@@ -41,3 +41,28 @@ def friendly_num (k: int) -> set:
     return set_num
 
 print(friendly_num(1000))
+
+
+
+# окончательный вариант 
+
+
+def del_sum(num: int) -> int:
+    count = 1
+    for i in range(2, int(num**0.5)):
+        if num % i == 0:
+            count += (i + num//i)
+    return count
+
+
+def friendly_num(k: int) -> set:
+    set_num = {}
+    for i in range(220, k):
+        del_num = del_sum(i)
+        if (i == del_num) or (i in set_num or del_num in set_num):
+            continue
+        if del_sum(del_num) == i:
+            set_num.update({i: del_num})
+    return set_num
+
+print(friendly_num(1000))
