@@ -30,3 +30,5 @@ def arif_progress(a1, d, n):
 result = arif_progress(a1, d, n)
 for i in result:
     print(i)
+
+
