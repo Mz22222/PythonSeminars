@@ -10,7 +10,7 @@
 
 
 
-# import pandas 
+import pandas 
 
 df = pandas.read_csv('california_housing_train.csv')
 
